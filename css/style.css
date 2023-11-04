@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css3?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --font: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--main-bg);
+  width: 100vw;
+}
+
+.container {
+  border-radius: 1.25rem;
+  height: 652px;
+  width: 384px;
+  box-shadow: 0px 25px 8px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--card-bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container__image {
+  width: 329px;
+  height: 330px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  margin: 28px 27px 26px 28px;
+}
+
+.container__title {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 21px;
+}
+
+.container__description {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--Soft-blue);
+  margin-bottom: 29px;
+}
+
+.container__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26.6px;
+}
+
+.container__ethereum,
+.container__clock {
+  display: flex;
+  align-items: center;
+}
+
+.container__ethereum-image {
+  width: 14px;
+  height: 23px;
+}
+
+.container__ethereum-description {
+  color: var(--Cyan);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.container__clock-image {
+  width: 17px;
+  height: 17px;
+  padding: 0 6px 0 121px;
+}
+
+.container__clock-description {
+  color: var(--Soft-blue);
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 27px;
+}
+
+.container__ethereum-image,
+.container__description,
+.container__division,
+.container__title,
+.container__author-image {
+  margin-left: 28px;
+}
+
+.container__author {
+  display: flex;
+  align-items: center;
+}
+
+.container__division {
+  margin-bottom: 17.5px;
+  color: var(--line-color);
+  height: 0px;
+  width: 328.5px;
+  stroke-width: 1px;
+  flex-shrink: 0;
+}
+
+.container__author-image {
+  border-radius: 50px;
+  border: 1px solid var(--white);
+  width: 36px;
+  height: 36px;
+}
+
+.container__author-title {
+  color: var(--Soft-blue);
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 18px;
+}
+
+.container__author-title span {
+  color: var(--white);
+}
